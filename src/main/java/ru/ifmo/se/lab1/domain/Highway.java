@@ -2,7 +2,6 @@ package ru.ifmo.se.lab1.domain;
 
 import java.util.HashSet;
 import java.util.Set;
-import java.util.TreeSet;
 
 public class Highway {
     private final String name;

@@ -1,11 +1,10 @@
 package ru.ifmo.se.lab1.domain;
 
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.Assert;
 import org.mockito.Mockito;
-import org.mockito.internal.configuration.injection.MockInjection;
 
 public class CarTest {
     private final static MOOD m1 = MOOD.BAD;
