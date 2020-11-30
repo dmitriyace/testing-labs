@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group 'ru.ifmo.se'
@@ -9,7 +10,13 @@ repositories {
     mavenCentral()
 }
 
+run {
+    mainClassName = 'ru.ifmo.se.lab2.Main'
+    args = ['--module=func', '--low=-10', '--high=6', '--step=0.1']
+}
+
 dependencies {
+    compile group: 'commons-cli', name: 'commons-cli', version: '1.4'
     testCompile group: 'junit', name: 'junit', version: '4.12'
     testCompile group: 'org.mockito', name: 'mockito-core', version: '2.1.0'
 }
