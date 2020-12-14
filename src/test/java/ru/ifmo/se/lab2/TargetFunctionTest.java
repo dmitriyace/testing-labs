@@ -40,23 +40,16 @@ public class TargetFunctionTest {
     @Parameterized.Parameters
     public static Collection<Object[]> params() {
         return Arrays.asList(new Object[][]{
-                // x <= 0
-
-                // decreasing part
                 {-10.459, -1171.829, DEFAULT_DELTA},
                 {-3 * Math.PI, -1.4711759877839594E13, EXTENDED_DELTA},
                 {-8.43, 2.2546, DEFAULT_DELTA},
 
-                // increasing part
                 {-7.307, -4.036, DEFAULT_DELTA},
                 {-2 * Math.PI, 9.604132030246383E13, EXTENDED_DELTA},
                 {-5.233, 1429.395, DEFAULT_DELTA},
 
-                // check boundary
                 {0, Double.POSITIVE_INFINITY, EXTENDED_DELTA},
                 {Double.NEGATIVE_INFINITY, Double.NaN, EXTENDED_DELTA},
-
-                // x > 0
 
                 {0.055, -23.163, DEFAULT_DELTA},
                 {0.076, -18.9411, DEFAULT_DELTA},
